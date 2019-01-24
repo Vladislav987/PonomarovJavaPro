@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="car" class="sample1.Car">
+        <constructor-arg value="Lada"/>
+        <constructor-arg value="1955"/>
+        <property name="driver" ref="driver"/>
+
+    </bean>
+    <bean id="driver" class="sample1.Driver">
+        <property name="name" value="Vaska"/>
+    </bean>
+
+
+</beans>
